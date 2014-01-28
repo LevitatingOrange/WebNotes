@@ -14,15 +14,12 @@ body {
 p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;    
+    margin-right: 15px;
 }
 
 .note-text {
-    position: static; 
-    margin-left: 5px;
-    margin-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
+    position: static;
+    margin-right: 15px;
 }
 
 .note {
@@ -32,26 +29,30 @@ p {
   box-shadow:         1px 1px 2px 3px #ccc;
     */
     position:relative;
+    /*
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
     border-radius: 5px;
+    
+    border-style:double;
+    border-width:medium;
+    */
 
 }
 
-.ui {
+.note-nav {
     position:absolute;
-}
-
-.i-info {    
- top:5px;
- right:5px;
+    right:0;
+    width:15px;
+    height:100%;
 }
 
 .i-size {
- bottom:5px;
- right:5px;
- display: none;
+    position:absolute;
+    bottom:0;
+    left:0;
+    display: none;
 }
 
 .default-note {

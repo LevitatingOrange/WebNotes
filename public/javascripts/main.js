@@ -1,8 +1,8 @@
 
 //changes the size of a note
 var changeSize = function() {
-    var thisEl = $(this);
-    var parent = thisEl.parent();
+    var thisEl = $(this).children(".fa-inverse");
+    var parent = thisEl.parent().parent();
     if (parent.hasClass("small-note")) {
         thisEl.removeClass("fa-compress");
         thisEl.removeClass("fa-expand");
@@ -25,11 +25,11 @@ var changeSize = function() {
 };
 
 var revealNoteUI = function() {
-    $(this).children(".i-size").fadeIn();
+    $(this).children(".note-nav").children(".i-size").fadeIn();
 };
 
 var hideNoteUI = function() {
-    $(this).children(".i-size").fadeOut();
+    $(this).children(".note-nav").children(".i-size").fadeOut();
 };
 
 
@@ -42,7 +42,7 @@ var addNote = function(type, id) {
 };
 
 var addTextToNote = function(id, text) {
-    $("#"+id).children(".note-text").append("<p>"+text+"</p>",id);
+    $("#"+id).append("<p>"+text+"</p>");
 };
 
 var removeNote = function(id) {
