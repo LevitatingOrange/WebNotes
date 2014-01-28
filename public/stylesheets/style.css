@@ -1,0 +1,44 @@
+
+/* Colors by http://clrs.cc*/
+body {
+    background-color: #DDDDDD;
+}
+
+.note {
+/*
+  -moz-box-shadow:    1px 1px 2px 3px #ccc;
+  -webkit-box-shadow: 1px 1px 2px 3px #ccc;
+  box-shadow:         1px 1px 2px 3px #ccc;
+    */
+}
+
+.default-note {
+    background-color: #FFE64C;
+    
+}
+
+.success-note {
+    background-color: #2ECC40;
+    
+}
+
+.urgent-note {
+    background-color: #FF4136;
+
+}
+
+.small-note {
+    width: 200px;
+    height: 80px;
+}
+
+.medium-note {
+    width: 400px;
+    height: 200px;    
+}
+
+.large-note {
+    width: 600px;
+    height: 400px;
+    
+}
