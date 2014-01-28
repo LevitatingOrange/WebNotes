@@ -1,15 +1,24 @@
 head
     link(rel="stylesheet", type="text/css", href="/stylesheets/jquery-ui-1.10.4.custom.min.css")
+    link(rel="stylesheet", type="text/css", href="/stylesheets/font-awesome.min.css")
     link(rel="stylesheet", type="text/css", href="/stylesheets/style.css")
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css')
 
 body
-    .note.default-note.small-note
-    //.note.default-note.medium-note
-    //.note.default-note.large-note
-    .note.urgent-note.small-note
-    .note.success-note.small-note
-
-
+    #main
+        #original
+            .note.default-note.small-note
+                .note-text
+                i.fa.fa-info-circle.i-info.ui
+                i.fa.fa-expand.i-size.ui
+            .note.urgent-note.small-note
+                .note-text
+                i.fa.fa-times-circle.i-info.ui
+                i.fa.fa-expand.i-size.ui
+            .note.success-note.small-note
+                .note-text
+                i.fa.fa-check-circle.i-info.ui
+                i.fa.fa-expand.i-size.ui
 
     script(src="/javascripts/jquery/jquery-1.10.2.js")
     script(src="/javascripts/jquery/jquery-ui-1.10.4.custom.min.js")
