@@ -9,17 +9,36 @@ body {
     position: relative; 
     width: 100%;
     height: 100%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;    
-    margin-right: 15px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 400;
+    margin-right: 25;
+    margin-left: 25;
+    margin-bottom: 10;
+    margin-top: 10; 
+    text-align: center;
 }
 
-.note-text {
-    position: static;
-    margin-right: 15px;
+.note-text-input {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 400;
+    margin-right: 25;
+    margin-bottom: 10;
+    margin-left: 5;
+    margin-top: 5; 
+    text-align: center;
+    display: none;
+    resize: none;
+    width: auto; 
+    height: auto;
+    background-color:inherit;
+    border-style:none;
 }
 
 .note {
@@ -29,31 +48,27 @@ p {
   box-shadow:         1px 1px 2px 3px #ccc;
     */
     position:relative;
-    /*
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    border-radius: 5px;
     
-    border-style:double;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    
+    /*
+    border-style:groove;
     border-width:medium;
-    */
-
+    */  
+    height:80;
+    width:200;
 }
 
 .note-nav {
-    position:absolute;
-    right:0;
-    width:15px;
-    height:100%;
+    width: 15px;
+    float:right;
+    margin: 3px 3px 3px 3px;
+    display:none;
 }
 
-.i-size {
-    position:absolute;
-    bottom:0;
-    left:0;
-    display: none;
-}
 
 .default-note {
     background-color: #FFE64C;
@@ -68,22 +83,6 @@ p {
 .urgent-note {
     background-color: #FF4136;
 
-}
-
-.small-note {
-    width: 200px;
-    height: 80px;
-}
-
-.medium-note {
-    width: 400px;
-    height: 200px;    
-}
-
-.large-note {
-    width: 600px;
-    height: 400px;
-    
 }
 
 #original {

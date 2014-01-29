@@ -2,26 +2,17 @@ head
     link(rel="stylesheet", type="text/css", href="/stylesheets/jquery-ui-1.10.4.custom.min.css")
     link(rel="stylesheet", type="text/css", href="/stylesheets/font-awesome.min.css")
     link(rel="stylesheet", type="text/css", href="/stylesheets/style.css")
-    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css')
+    //link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css')
 
 body
     #main
         #original
-            .note.default-note.small-note
+            .ui-widget-content.note.ui-widget-content
+                textarea.note-text-input(name="user_eingabe",cols="15", rows="3")
                 .note-nav
-                    i.fa.fa-info-circle
-                    i.fa.fa-expand.i-size
-            .note.urgent-note.small-note
-                .note-nav
-                    i.fa.fa-times-circle
-                    i.fa.fa-expand.i-size
-            .note.success-note.small-note
-                .note-nav
-                    i.fa.fa-check-circle
-                    span.fa-stack.fa-lg.i-size
-                        i.fa.fa-circle.fa-stack-2x
-                        i.fa.fa-expand.fa-stack-1x.fa-inverse
-
+                    i.fa.fa-times-circle.i-remove
+                p 
     script(src="/javascripts/jquery/jquery-1.10.2.js")
     script(src="/javascripts/jquery/jquery-ui-1.10.4.custom.min.js")
     script(src="/javascripts/main.js")
